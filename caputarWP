@@ -1,0 +1,9 @@
+<a href="https://wa.me/..." onclick="registerEvent('whatsapp_click')">Contato</a>
+<script>
+function registerEvent(type) {
+  fetch('/admin-panel/track_event.php', {
+    method: 'POST',
+    body: new URLSearchParams({ event: type })
+  });
+}
+</script>

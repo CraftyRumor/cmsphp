@@ -1,0 +1,334 @@
+/* Reseta margens e paddings padrão do body/html */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    /* overflow-x: hidden; */ /* Aparentemente você removeu ou comentou corretamente */
+}
+
+/* -- FONTES PERSONALIZADAS (OPCIONAL, SE HOUVER) -- */
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap'); */
+
+/* -- LOGO -- */
+.logo img, .logo-comparacao img {
+    max-width: 230px; /* Ajustado para um valor padrão, você pode usar logo-comparacao para sobrescrever se necessário */
+    height: auto;
+    margin: 0 auto;
+}
+
+.logo-comparacao img {
+    max-width: 200px; /* Sobrescreve o max-width para a logo de comparação */
+}
+
+/* -- SEÇÃO DE ATENÇÃO -- */
+.atencao {
+    background-color: black;
+    color: white;
+    margin-top: -20px;
+    margin-bottom: 5px;
+}
+
+/* --- ESTILOS GERAIS DE TEXTO E TÍTULOS --- */
+/* Unificando as definições de fonte para evitar repetição */
+.headline, .titulos-gerais, .titulos-gerais-white, .subtitulos, .subtitulos-card-pequeno {
+    font-family: montserrat;
+    font-weight: bold; /* Adicionado para consistência */
+}
+
+.headline {
+    font-size: 2em;
+    font-weight: 500; /* Manteve a variação de peso */
+    color: black;
+    margin-top: 30px;
+    letter-spacing: -2px;
+}
+
+.titulos-gerais {
+    font-size: 2em;
+    letter-spacing: -1px;
+}
+
+.titulos-gerais-white {
+    font-size: 2em;
+    letter-spacing: -1px;
+    color: white;
+    margin-bottom: 60px !important;
+}
+
+.subtitulos {
+    font-size: 1.5em;
+    letter-spacing: -1px;
+}
+
+.subtitulos-card-pequeno {
+    font-size: 1.0 rem;
+   
+    letter-spacing: -0.5px;
+    color: white;
+}
+
+/* Correção de espaçamento na tabela de comparação */
+.detalhe2 .table-borderless .subtitulos-card-pequeno {
+    margin-bottom: 0 !important;
+}
+
+.detalhe2 .table-borderless .d-flex {
+    margin-bottom: 0 !important;
+}
+
+.description, .description2, .textos-gerais, .subtextos, .card-text {
+    font-family: montserrat;
+    font-weight: 400; /* Adicionado para consistência */
+    color: black;
+}
+
+.description, .description2 {
+    font-size: 1.1em;
+    margin-top: 25px; /* apenas para .description */
+}
+
+.textos-gerais {
+    font-size: 1.2em;
+    margin-top: 35px;
+}
+
+.subtextos {
+    font-size: 1.1em;
+}
+
+.card-text {
+    font-size: 1em;
+}
+
+.texto-laranja {
+    color: #EF6024;
+}
+
+/* --- CARDS E DETALHES GERAIS (SEÇÃO DETALHE E DETALHE2) --- */
+.detalhe, .detalhe2 {
+    border-radius: 45px;
+    padding: 30px;
+    margin: -35px auto;
+    max-width: 1000px;
+    width: 75%;
+    box-sizing: border-box;
+    position: relative;
+}
+
+/* Estilos de fundo e texto específicos para cada tipo de detalhe */
+.detalhe {
+    background-color: #343a40;
+    color: #ffffff;
+}
+
+.detalhe2 {
+    background-color: #343a40;
+    color: #343a40;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Ajuste de containers */
+.detalhe .container, .detalhe2 .container {
+    padding-left: 0;
+    padding-right: 0;
+    max-width: none;
+}
+
+.item-card {
+    padding: 0px;
+    border-radius: 0px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 100%; /* Unificado para ambos os detalhes */
+}
+
+/* Estilos para o card destacado */
+.item-card.highlighted {
+    background-color: #ff6600; /* Laranja para o card destacado */
+    color: #ffffff; /* Texto branco no card destacado */
+    transform: translateY(-10px); /* Movimenta o card para cima para destacá-lo */
+    box-shadow: 0 10px 20px rgba(255, 102, 0, 0.4);
+}
+
+.item-card.highlighted h2, .item-card.highlighted h6 {
+    color: #ffffff;
+}
+
+.item-card.highlighted p, .item-card.highlighted .text-warning {
+    color: #fff !important;
+}
+
+.item-card .icon {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    color: #ff6600;
+}
+
+.item-card.highlighted .icon {
+    color: #ffffff;
+}
+
+.item-card .item-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* COMPARAÇÃO - ESTILOS ESPECÍFICOS */
+.detalhe2 .item-card {
+    background-color: transparent;
+    box-shadow: none;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+/* --- SEÇÃO HERO --- */
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('img/Landing-page-para-advogados.png');
+}
+
+/* --- BOTÃO DE WHATSAPP --- */
+.btn.btn-success.btn-lg.btn-custom-whatsapp {
+    max-width: 100%;
+    text-align: center;
+    display: inline-block;
+    background-color: #EF6024;
+    border-color: #EF6024;
+    color: white;
+    transition: all 0.3s ease-in-out;
+    border-radius: 25px;
+    padding-left: 35px;
+    padding-right: 35px;
+}
+
+.btn.btn-success.btn-lg.btn-custom-whatsapp:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 8px #EF6024, 0 0 5px #EF6024, 0 0 5px #EF6024, 0 0 5px #EF6024;
+    background-color: #EF6024;
+    border-color: #EF6024;
+}
+
+.btn-custom-whatsapp .fa-brands {
+    margin-right: 8px;
+}
+
+/* --- ÍCONES E SERVIÇOS --- */
+.icone-servico, .icone-passos {
+    color: #EF6024;
+    font-size: 30px;
+}
+
+.explicar {
+    margin-top: 40px;
+}
+
+.passos {
+    margin-bottom: 30px;
+}
+
+.card-title {
+    font-family: montserrat;
+    font-size: 1.2em;
+    margin-top: 15px;
+}
+
+.card-body-unico {
+    margin-top: 30px;
+    border-radius: 15px;
+    height: 220px;
+}
+
+/* --- CAROUSEL --- */
+.carousel-fixed-height {
+    height: 400px;
+    overflow: hidden;
+}
+
+/* --- ANIMAÇÕES (FadeIn) --- */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.secao-animada {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.secao-animada.animar {
+    animation: fadeIn 1.2s ease-out forwards;
+    transition: none;
+}
+
+/* --- MEDIA QUERIES (RESPONSIVIDADE) --- */
+@media (max-width: 991.98px) {
+    .detalhe .row > div, .detalhe2 .row > div {
+        margin-bottom: 20px;
+    }
+    .detalhe .row > div:last-child {
+        margin-bottom: 0;
+    }
+    .col-md-4 {
+        width: 50%;
+    }
+    .col-sm-12 {
+        width: 100%;
+    }
+    .detalhe2 .item-card.highlighted {
+        transform: none;
+    }
+    .detalhe2 .item-card h2, .detalhe2 .item-card h6 {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .col-md-4, .col-sm-12 {
+        width: 100%;
+    }
+    .detalhe, .detalhe2 {
+        padding: 25px;
+        width: 90%;
+    }
+    .item-card {
+        padding: 15px;
+    }
+    .item-card.highlighted {
+        padding: 20px;
+    }
+    .hero {
+        background-image: url('img/Landing-page-para-advogados-mobile.png') !important;
+        background-color: none !important;
+        min-height: 100vh;
+        color: white;
+    }
+    .display-4.text-headline {
+        font-size: 38px;
+        text-align: center;
+        margin-top: 35px;
+    }
+    .lead.text-headline-sub {
+        font-size: 16px;
+        text-align: center;
+    }
+    .hero .justify-content-md-start.justify-content-center {
+        justify-content: center !important;
+    }
+    .hero .title-btn {
+        text-align: center;
+    }
+}
