@@ -3,21 +3,18 @@ html, body {
     margin: 0;
     padding: 0;
     height: 100%;
-    /* overflow-x: hidden; */ /* Aparentemente você removeu ou comentou corretamente */
 }
 
-/* -- FONTES PERSONALIZADAS (OPCIONAL, SE HOUVER) -- */
-/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap'); */
 
 /* -- LOGO -- */
 .logo img, .logo-comparacao img {
-    max-width: 230px; /* Ajustado para um valor padrão, você pode usar logo-comparacao para sobrescrever se necessário */
+    max-width: 230px;
     height: auto;
     margin: 0 auto;
 }
 
 .logo-comparacao img {
-    max-width: 200px; /* Sobrescreve o max-width para a logo de comparação */
+    max-width: 200px; 
 }
 
 /* -- SEÇÃO DE ATENÇÃO -- */
@@ -29,15 +26,14 @@ html, body {
 }
 
 /* --- ESTILOS GERAIS DE TEXTO E TÍTULOS --- */
-/* Unificando as definições de fonte para evitar repetição */
 .headline, .titulos-gerais, .titulos-gerais-white, .subtitulos, .subtitulos-card-pequeno {
     font-family: montserrat;
-    font-weight: bold; /* Adicionado para consistência */
+    font-weight: bold;
 }
 
 .headline {
     font-size: 2em;
-    font-weight: 500; /* Manteve a variação de peso */
+    font-weight: 500;
     color: black;
     margin-top: 30px;
     letter-spacing: -2px;
@@ -78,13 +74,13 @@ html, body {
 
 .description, .description2, .textos-gerais, .subtextos, .card-text {
     font-family: montserrat;
-    font-weight: 400; /* Adicionado para consistência */
+    font-weight: 400; 
     color: black;
 }
 
 .description, .description2 {
     font-size: 1.1em;
-    margin-top: 25px; /* apenas para .description */
+    margin-top: 25px; 
 }
 
 .textos-gerais {
