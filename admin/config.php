@@ -1,8 +1,8 @@
 <?php
 $host = 'localhost';
-$db   = 'site_empresa'; // Nome do banco que você criou
-$user = 'root';         // Usuário do MySQL (XAMPP)
-$pass = '';             // Senha do MySQL (vazia no XAMPP)
+$db   = 'site_empresa'; // Nome do banco
+$user = 'root';         // Usuário do MySQL
+$pass = '';             // Senha do MySQL
 $charset = 'utf8mb4';
 
 $dsn = "mysql:host=$host;dbname=$db;charset=$charset";
